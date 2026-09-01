@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevStash - Developer's Toolbox</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/icons/icon-192.png" />
+</head>
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header>
+        <div class="logo">
+            <span class="logo-icon">🛠️</span>
+            <span class="logo-text">DevStash</span>
+        </div>
+        <nav>
+            <button class="nav-btn active" data-tab="snippets">📋 Snippets</button>
+            <button class="nav-btn" data-tab="colors">🎨 Colors</button>
+            <button class="nav-btn" data-tab="markdown">📝 Markdown</button>
+            <button class="nav-btn" data-tab="tips">💡 Tips</button>
+        </nav>
+        <div class="theme-toggle">
+            <button id="themeBtn">🌙</button>
+        </div>
+    </header>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main>
+
+        <!-- ====== TAB 1: SNIPPETS ====== -->
+        <section id="snippets" class="tab-content active">
+            <h2>📋 Code Snippets</h2>
+            <div class="snippet-controls">
+                <select id="langFilter">
+                    <option value="all">All Languages</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="css">CSS</option>
+                    <option value="html">HTML</option>
+                    <option value="bash">Bash</option>
+                </select>
+                <input type="text" id="snippetSearch" placeholder="🔍 Search snippets..." />
+                <button id="addSnippetBtn">➕ Add New</button>
+            </div>
+            <div id="snippetList" class="snippet-grid"></div>
+            <div id="snippetModal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h3>Add Snippet</h3>
+                    <input type="text" id="snippetTitle" placeholder="Title..." />
+                    <select id="snippetLang">
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="css">CSS</option>
+                        <option value="html">HTML</option>
+                        <option value="bash">Bash</option>
+                    </select>
+                    <textarea id="snippetCode" rows="6" placeholder="Paste your code here..."></textarea>
+                    <button id="saveSnippet">💾 Save Snippet</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== TAB 2: COLORS ====== -->
+        <section id="colors" class="tab-content">
+            <h2>🎨 Color Palette Generator</h2>
+            <div class="color-controls">
+                <button id="generateColors">🎲 Generate New Palette</button>
+                <button id="copyPalette">📋 Copy All</button>
+            </div>
+            <div id="paletteContainer" class="palette-grid"></div>
+            <div class="color-info">
+                <p>Click any color to copy its hex code</p>
+            </div>
+        </section>
+
+        <!-- ====== TAB 3: MARKDOWN ====== -->
+        <section id="markdown" class="tab-content">
+            <h2>📝 Markdown Cheatsheet</h2>
+            <div class="markdown-layout">
+                <div class="markdown-input">
+                    <textarea id="markdownInput" rows="10" placeholder="Write markdown here..."># Hello World
+
+## Subheading
+
+- List item 1
+- List item 2
+
+**Bold** and *italic* text
+
+[Google](https://google.com)
+
+`code here`
+
+```javascript
+console.log("Hello");
+```</textarea>
+                </div>
+                <div class="markdown-preview">
+                    <h3>Live Preview</h3>
+                    <div id="markdownOutput"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== TAB 4: TIPS ====== -->
+        <section id="tips" class="tab-content">
+            <h2>💡 Daily Dev Tips</h2>
+            <div id="dailyTip" class="tip-card">
+                <p class="tip-date">Loading tip...</p>
+                <p class="tip-content">Loading...</p>
+            </div>
+            <button id="newTipBtn">🔄 Next Tip</button>
+            <hr />
+            <h3>📤 Submit Your Tip</h3>
+            <textarea id="tipInput" rows="4" placeholder="Share your development tip..."></textarea>
+            <button id="submitTipBtn">📨 Submit Tip</button>
+            <p id="tipStatus"></p>
+        </section>
+
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <p>Made with ❤️ | RYZENXIE &copy; 2026</p>
+        <p>⭐ Star on <a href="https://github.com">GitHub</a></p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/snippets.js"></script>
+    <script src="js/colors.js"></script>
+    <script src="js/markdown.js"></script>
+    <script src="js/daily-tip.js"></script>
+</body>
+</html>

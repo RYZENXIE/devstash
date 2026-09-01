@@ -1,0 +1,23 @@
+{
+    "name": "DevStash - Developer's Toolbox",
+    "short_name": "DevStash",
+    "description": "Snippets, Colors, Markdown & Tips for developers",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0f0f1a",
+    "theme_color": "#6c63ff",
+    "icons": [
+        {
+            "src": "assets/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
