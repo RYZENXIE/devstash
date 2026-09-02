@@ -10,12 +10,6 @@
 
 ---
 
-## 📌 Live Demo
-
-🔗 **[Try DevStash Live](https://RYZENXIE.github.io/devstash/)**
-
----
-
 ## 📖 About DevStash
 
 **DevStash** is an all-in-one developer toolbox that solves 4 common daily problems:
@@ -42,10 +36,6 @@
 
 ---
 
-## 🚀 Quick Start
-
-### Option 1: Use Live Demo
-Simply visit: **[https://RYZENXIE.github.io/devstash/](https://RYZENXIE.github.io/devstash/)**
 
 ### Option 2: Run Locally
 
